@@ -1,10 +1,10 @@
 <?php  
-function sum($x, $y) {
-	$z = $x + $y;
-	return $z;
+function sum($x, $y, $a=0) {
+	$z = $x + $y + $a;
+	echo "$x + $y + $a = $z <br>";
 }
 
-echo "5 + 10 = " . sum(5, 10) . "<br>";
-echo "7 + 13 = " . sum(7, 13) . "<br>";
-echo "2 + 4 = " . sum(2, 4);
+sum(5, 10, 2) ;
+sum(7, 13) ;
+sum(2, 4, 1);
 ?>
